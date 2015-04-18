@@ -134,7 +134,6 @@ body{
     width: 6em;
     text-decoration: none;
     color: white;
-    
     padding: 0.2em 0.6em;
     border-right: 1px solid white;
   background:#80628b;
@@ -151,67 +150,127 @@ a:hover {
   margin-top:3%;
   margin-left:0%;
 }
-
- #centru{
-   width:100%;
- }
 #dreapta{
-  float:right;
   margin-top:20px;
-  width:70%;
-  background:#4d505b;
+  float:left;
+  width:50%;
+  border-radius:10px;
+  height:400px;
+  background:#80628b;
   box-shadow: 12px 0 15px -4px black,-12px 0 8px -4px black;
- 
-}
-.produseRecomandate{
-  width:100%;
-  height:100%s;
 }
 
-table.tabelRecom{
-      margin-left:auto; 
-    margin-right:auto;
+ #bg_mask1{
+            position: absolute;
+            top: 0;
+            right: 0;
+            bottom: 0;
+            left: 0;
+            margin: auto;
+            margin-top: 0px;
+            width: 981px;
+            height: 610px;
+            z-index: 0;
+            visibility: hidden;
+        } 
+
+        #frontlayer1 {
+            margin:  360px 50px;;
+            padding : 30px;
+            width: 400px;
+            height: 220px;
+            background-color:#16a79d;
+            visibility: hidden;
+            border: 1px solid black;
+            z-index: 1;
+        } 
+#bg_mask2{
+            position: absolute;
+            top: 0;
+            right: 0;
+            bottom: 0;
+            left: 0;
+            margin: auto;
+            margin-top: 0px;
+            width: 981px;
+            height: 610px;
+            z-index: 0;
+            visibility: hidden;
+        } 
+
+        #frontlayer2 {
+            margin:  360px 50px;
+            padding : 30px;
+            width: 400px;
+            height: 220px;
+            background-color:#16a79d;
+            visibility: hidden;
+            border: 1px solid black;
+            z-index: 1;
+        } 
+
+#bg_mask3{
+            position: absolute;
+            top: 0;
+            right: 0;
+            bottom: 0;
+            left: 0;
+            margin: auto;
+            margin-top: 0px;
+            width: 981px;
+            height: 610px;
+            z-index: 0;
+            visibility: hidden;
+        } 
+
+        #frontlayer3 {
+            margin: 360px 50px;
+            padding : 30px;
+            width: 400px;
+            height: 220px;
+            background-color:#16a79d;
+            visibility: hidden;
+            border: 1px solid black;
+            z-index: 1;
+        } 
+
+#menu2 {
+    float: left;
+    width: 100%;
+    margin-up:5%;
+    margin-left:25%;
+    list-style-type: none;
 }
-thead{
-  margin-left:50%;
-}
- td {
-	border-left: 1px #70b8ff solid;
-  border-top: 1px #70b8ff solid;
-}
-table, tr {
-	border-bottom: 1px #70b8ff solid;
-  
-}
-#stanga{
-  float:left;
-  margin-top:20px;
-  margin-left:1%;
-  width:25%;
-  background:#4d505b;
-  box-shadow: 12px 0 15px -4px black,-12px 0 8px -4px black;
- 
-}
-#nav a {
-   transition:all linear 0.15s;
-    width: 6em;
+
+.button {
+  transition:all linear 0.15s;
+    float: left;
+    width: 9em;
     text-decoration: none;
     color: white;
-    padding: 0.2em 0.6em;
-  display: inline-block;
-  
-} 
-.cumpara{
-  margin-left:40%;
-  width:50%;
-  background:#16a79d;
+    padding: 0.6em 0.12em;
+    border: 1px solid white;
+    background:#16a79d;
 }
-.a-cumpara{
-  transition:all linear 0.15s;
-  display: block;
+#button{
+  color:white;
+  background:#80628b;
+  border: 1px solid white;
   text-decoration: none;
-  color: white;
-  background-color:#16a79d;
+  float: right;
+  width: 7em;
+  padding: 0.6em 0.12em;
+}
+button:hover{
+  background-color: #f4ac42;
+}
+table.tabelComanda{
+    margin-left:-6%; 
+    margin-right:auto;
+    background:#f4ac42;
+}
+thead{
+  margin-left:20%;
 }
 #jos{
  background: #4d505b;
@@ -225,6 +284,3 @@ table, tr {
   height:80px;
   box-shadow: 1px 10px 40px black;
 }
-
-
-

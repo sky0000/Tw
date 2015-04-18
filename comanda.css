@@ -134,7 +134,6 @@ body{
     width: 6em;
     text-decoration: none;
     color: white;
-    
     padding: 0.2em 0.6em;
     border-right: 1px solid white;
   background:#80628b;
@@ -152,66 +151,47 @@ a:hover {
   margin-left:0%;
 }
 
- #centru{
-   width:100%;
- }
-#dreapta{
-  float:right;
+#central{
   margin-top:20px;
-  width:70%;
-  background:#4d505b;
-  box-shadow: 12px 0 15px -4px black,-12px 0 8px -4px black;
- 
-}
-.produseRecomandate{
   width:100%;
-  height:100%s;
+  z-index:1;
+  height:600px;
+  border-top-left-radius:10px;
+  border-top-right-radius:10px;
+  background:#80628b;
+  box-shadow: 12px 0 15px -4px black,-12px 0 8px -4px black;  
 }
 
-table.tabelRecom{
-      margin-left:auto; 
+#h1{
+  
+  font-family:Lucida Console;
+  font-size:20px;
+  color:white;
+  margin-left:40%;
+}
+
+#p1{
+  font-family:Arial;
+  font-size:15px;
+  margin-left:15%;
+}
+#p2{
+  font-family:Arial;
+  font-size:15px;
+  margin-left:17%; 
+}
+#p3{
+  font-family:Arial;
+  font-size:15px;
+  margin-left:30%; 
+}
+table.tabelComanda{
+    margin-left:10%; 
     margin-right:auto;
+    background:#f4ac42;
 }
 thead{
   margin-left:50%;
-}
- td {
-	border-left: 1px #70b8ff solid;
-  border-top: 1px #70b8ff solid;
-}
-table, tr {
-	border-bottom: 1px #70b8ff solid;
-  
-}
-#stanga{
-  float:left;
-  margin-top:20px;
-  margin-left:1%;
-  width:25%;
-  background:#4d505b;
-  box-shadow: 12px 0 15px -4px black,-12px 0 8px -4px black;
- 
-}
-#nav a {
-   transition:all linear 0.15s;
-    width: 6em;
-    text-decoration: none;
-    color: white;
-    padding: 0.2em 0.6em;
-  display: inline-block;
-  
-} 
-.cumpara{
-  margin-left:40%;
-  width:50%;
-  background:#16a79d;
-}
-.a-cumpara{
-  transition:all linear 0.15s;
-  display: block;
-  text-decoration: none;
-  color: white;
-  background-color:#16a79d;
 }
 #jos{
  background: #4d505b;
@@ -225,6 +205,3 @@ table, tr {
   height:80px;
   box-shadow: 1px 10px 40px black;
 }
-
-
-
