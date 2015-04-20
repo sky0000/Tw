@@ -91,8 +91,16 @@ INSERT INTO PERFUM VALUES(864008,'Dior Dior Homme Intense', 157, 7, 'Dior Homme 
 /
 INSERT INTO PERFUM VALUES(864009,'Calvin Klein Eternity for Men Summer', 210, 12,'Eternity for Men Summer', 'Calvin Klein', 100, 'Vara', 'Zi de nastere')
 /
-INSERT INTO PERFUM VALUES(864010,'Hugo Boss Hugo One Tree', 159, 3,'Hugo One Tree', 'Hugo Boss', 35, 'Primavara', 'Paste'); 
+INSERT INTO PERFUM VALUES(864010,'Hugo Boss Hugo One Tree', 159, 3,'Hugo One Tree', 'Hugo Boss', 35, 'Primavara', 'Paste')
 /
+drop index cod_unic;
+CREATE UNIQUE INDEX cod_unic
+on voucher(cod);
+
+explain plan for select * from voucher 
+where id='adriana';
+
+select plan_table_output from table(DBMS_XPLAN.DISPLAY());
 
 
 select * from users;
@@ -118,6 +126,8 @@ cod number;
 begin 
 
 for i in 1..nrVouchere loop
+<<continuaFor>>
+null;
   ok_user:=1;
   ok_parfum:=1;
   user_rand:=round(DBMS_RANDOM.value(1,10));
@@ -139,14 +149,21 @@ for i in 1..nrVouchere loop
        ok_parfum:=ok_parfum+1;
        end if;
        end loop;
+       begin
   insert into voucher values(numeUser,cod,10,numeParfum);
-    
+  exception when DUP_VAL_ON_INDEX then
+  goto continuaFor;
+  end;  
 end loop;
 end populeazaVouchere;
 /
 declare
 begin
-populeazaVouchere(50);
+populeazaVouchere(5000);
 end;
 /
 select * from voucher;
+
+insert into voucher values('andrei',666666,10,'numeParfum');
+create  index comenzi 
+on comanda(id);
