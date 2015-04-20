@@ -1,0 +1,47 @@
+body {
+  background-color:#202020;
+}
+#login {
+     position:absolute;
+     width:500px;
+     height:200px;
+     z-index:15;
+     top:50%;
+     left:45%;
+     margin:-100px 0 0 -150px;
+     background:#202020;
+     border-radius:10px;
+      box-shadow: 0 0 40px black;
+}
+#stanga{
+  --background:red;
+  float :left;
+  width:250px;
+  height:200px;
+}
+#singup{
+  --background:green;
+  float:right;
+  width:250;
+  height:200;
+}
+#loginT{
+  color :white;
+   margin-left:100px;
+}
+#loginText
+{
+  color :white;
+  margin-left:30px;
+}
+form{
+  margin-left:35px;
+  border-radius:10px;
+}
+#form1{
+  margin-right:30px;
+  border-radius:10px;
+}
+#buton{
+  margin-left:60px;
+}
