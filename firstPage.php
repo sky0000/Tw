@@ -1,4 +1,5 @@
 <?php
+include 'core/init.php';
 include 'includes/overall/header.php';
 ?>
 <link type="text/css" rel="stylesheet" href="css/firstPage.css"/>

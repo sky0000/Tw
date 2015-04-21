@@ -11,6 +11,6 @@
                     <li><a href="dasboard.php">Dashboard</a></li>    
                 </ul>
             </li>
-            <li><a href="login.php">Logout</a></li>
+            <li><a href="includes/widgets/login.php">Logout</a></li>
         </ul>
     </nav>

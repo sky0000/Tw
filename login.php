@@ -1,35 +1,25 @@
-<html>
-   <head>
-    <link type="text/css" rel="stylesheet" href="css/login.css"/>
+<?php
+include 'core/init.php';
+/*if(user_exists($conn, 'vlad') === true){
+	print 'exists';}
+*/
+if(empty($_POST) === false) {
+	$username = $_POST['username'];
+	$password = $_POST['password'];
 
-     <title>Perfumer</title>
-  </head>
-  <body>
-    <div  id="login">
-      <div id="stanga">
-      <p id ="loginT" >   Login</p>
-        <form id="form"  method="post" action="firstPage.php">
-         
-          <input type="text" name="username" placeholder="User" required>
-         <p>
-          <input type="password" name="password" placeholder="Password" required>
-          <p></p>
-           <input id ="buton" type ="submit"  value="Login" >
-        </form>
-      </div>
-      <div id="singup">
-             <p id ="loginT" >   Singup</p>
-        <form id="form1"  method="post" action="firstPage.php" autocomplete="off">
-         
-          <input type="text" name="username" placeholder="User"  required>
-         <p>
-          <input type="password" name="password" placeholder="Password" required>
-            <p></p>
-            
-           <input id ="buton" type ="submit"    value="Singup" >
-        </form>
-      </div>
-      </div>
-      </div>
-  </body>
-</html>
+	if(empty($username) || empty($password)) {
+		$errors[] = 'asa se scrie ??';
+	}
+	else if (user_exists($conn,$username) === false)
+	{
+		$errors[] = 'sorry nu esti in baza de date';
+		print 'sorry nu esti in baza de date';
+	}
+	else {
+      
+	}
+	
+	print_r($errors);
+}
+
+?>
