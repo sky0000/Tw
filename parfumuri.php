@@ -1,8 +1,7 @@
-
-    <link type="text/css" rel="stylesheet" href=" parfumuri.css"/>
    <?php
    include 'includes/overall/header.php'
    ?>
+   <link type="text/css" rel="stylesheet" href=" css/parfumuri.css"/>
         <div id="centru">
 <div id="stanga">
   <ul id="nav">
