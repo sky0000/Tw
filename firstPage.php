@@ -4,6 +4,7 @@ include 'includes/overall/header.php';
 ?>
 <link type="text/css" rel="stylesheet" href="css/firstPage.css"/>
 <div id="dreapta">
+
   <div class="divProdRecom">
     <table class="tabelRecom">
       <thead><th colspan=4>Produse recomandate </th></thead>

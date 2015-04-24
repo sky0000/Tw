@@ -1,7 +1,9 @@
 
   <header>
     <?php
+  
 include 'menu.php';
+
 ?>
 </div>
 <div id="banner">

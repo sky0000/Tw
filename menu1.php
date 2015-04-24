@@ -3,7 +3,7 @@
         <ul class="clearfix">
  
             <li>
-                <a href="#">Cont <span class="arrow">&#9660;</span></a>
+                <a href="#">Cont[log] <span class="arrow">&#9660;</span></a>
  
                 <ul class="sub-menu">
                     <li><a href="profil.php">Profil</a></li>
